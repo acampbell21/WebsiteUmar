@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, './client/public')));
 
-app.use('/', require(index));
+app.use('/', require('./routes/index'));
 
 // Serve static assets in production
 
