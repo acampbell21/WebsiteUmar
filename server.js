@@ -22,7 +22,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -54,7 +53,7 @@ module.exports = app;
 
 if (process.env.NODE_ENV === 'production') {
   // Set static folder
-  app.use(express.static(__dirname, 'client/build'));
+  app.use(express.static(__dirname, '/client/build'));
 
   app.get('*', (req, res) =>
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
