@@ -6,7 +6,11 @@ const styles = {
   MenuStyles: {
     display: 'flex',
     justifyContent: 'center',
-    height: '40px'
+    height: '35px',
+    fontSize: '12px'
+  },
+  smallFont: {
+    fontSize: '12px'
   }
 };
 
@@ -26,6 +30,7 @@ export class Navbar extends Component {
               name='home'
               active={activeItem === 'home'}
               onClick={this.handleItemClick}
+              style={styles.smallFont}
             />
           </Link>
           <Link to='/bio'>
@@ -33,6 +38,7 @@ export class Navbar extends Component {
               name='bio'
               active={activeItem === 'bio'}
               onClick={this.handleItemClick}
+              style={styles.smallFont}
             />
           </Link>
           <Link to='/media'>
@@ -40,6 +46,7 @@ export class Navbar extends Component {
               name='media'
               active={activeItem === 'media'}
               onClick={this.handleItemClick}
+              style={styles.smallFont}
             />
           </Link>
           <Link to='/education'>
@@ -47,6 +54,7 @@ export class Navbar extends Component {
               name='education'
               active={activeItem === 'education'}
               onClick={this.handleItemClick}
+              style={styles.smallFont}
             />
           </Link>
           <Link to='/contactform'>
@@ -54,6 +62,7 @@ export class Navbar extends Component {
               name='contact'
               active={activeItem === 'contact'}
               onClick={this.handleItemClick}
+              style={styles.smallFont}
             />
           </Link>
           <Link to='/events'>
@@ -61,6 +70,7 @@ export class Navbar extends Component {
               name='events'
               active={activeItem === 'events'}
               onClick={this.handleItemClick}
+              style={styles.smallFont}
             />
           </Link>
         </Menu>
