@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Segment, Header, Grid, Image } from 'semantic-ui-react';
+import { Segment, Header, Grid, Image, Icon } from 'semantic-ui-react';
 import Links from './Links';
 import HomePhoto from '../../img/HomePhoto.png';
 
@@ -30,6 +30,11 @@ const styles = {
   segmentText: {
     fontSize: '16px',
     fontWeight: 'bold'
+  },
+  iconStyle: {
+    display: 'flex',
+    alignContent: 'center',
+    paddingLeft: '40px'
   }
 };
 
@@ -51,6 +56,18 @@ export class Home extends Component {
             computer={4}
             centered
           >
+            <div style={styles.iconStyle}>
+              <a href='https://www.instagram.com/p/B3WQx1UDaKs/'>
+                <Icon name='instagram' size='huge'></Icon>
+              </a>
+              <a href='https://open.spotify.com/artist/7wD0ytHioqxplArYggJ2kt?si=t_n5UCPbTA6qt6-UF7s8Cw'>
+                <Icon name='spotify' size='huge'></Icon>
+              </a>
+              <Icon name='soundcloud' size='huge'></Icon>
+              <a href='https://m.facebook.com/music.umar/'>
+                <Icon name='facebook' size='huge'></Icon>
+              </a>
+            </div>
             <Header as='h1' textAlign='center'>
               Umar Mausoof
             </Header>
