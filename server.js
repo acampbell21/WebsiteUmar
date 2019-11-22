@@ -19,14 +19,17 @@ app.use(function(req, res, next) {
 });
 
 // uncomment after placing your favicon in /public
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
+app.use(express.static('public'));
 
 app.use('/', require('./routes/index'));
 
 // Serve static assets in production
+app.set('view engine', 'jade');
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
