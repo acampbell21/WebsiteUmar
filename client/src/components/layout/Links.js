@@ -12,10 +12,10 @@ const styles = {
 export const Links = () => {
   return (
     <Grid.Row style={styles.iconRow} stretchd justified>
-      <a href='https:/instagram.com/umardrums'>
+      <a href='https://www.instagram.com/p/B3WQx1UDaKs/'>
         <Icon name='instagram' size='huge'></Icon>
       </a>
-      <a href='https://open.spotify.com/artist/4LBRyTJ74nnTAPorjG3bQI'>
+      <a href='https://open.spotify.com/artist/7wD0ytHioqxplArYggJ2kt?si=t_n5UCPbTA6qt6-UF7s8Cw'>
         <Icon name='spotify' size='huge'></Icon>
       </a>
       <Icon name='soundcloud' size='huge'></Icon>

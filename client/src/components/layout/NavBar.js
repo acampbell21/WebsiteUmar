@@ -56,6 +56,13 @@ export class Navbar extends Component {
               onClick={this.handleItemClick}
             />
           </Link>
+          <Link to='/events'>
+            <Menu.Item
+              name='events'
+              active={activeItem === 'events'}
+              onClick={this.handleItemClick}
+            />
+          </Link>
         </Menu>
       </div>
     );

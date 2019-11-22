@@ -4,6 +4,7 @@ import NavBar from './components/layout/NavBar';
 import Home from './components/layout/Home';
 import Bio from './components/layout/Bio';
 import Media from './components/layout/Media';
+import Events from './components/layout/Events';
 import ContactForm from './components/layout/ContactForm';
 import Education from './components/layout/Education';
 import 'semantic-ui-css/semantic.min.css';
@@ -20,6 +21,7 @@ class App extends Component {
             <Route exact path='/media' component={Media} />
             <Route exact path='/education' component={Education} />
             <Route exact path='/contactForm' component={ContactForm} />
+            <Route exact path='/events' component={Events} />
           </Switch>
         </div>
       </Router>
